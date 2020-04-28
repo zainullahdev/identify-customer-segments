@@ -1,0 +1,52 @@
+Requires Changes
+2 SPECIFICATIONS REQUIRE CHANGES
+You really made good project, Well Done !
+But you have small error in choice of threshold value for rows splitting and it affected many other project items, so you should fix this error and re-run the cells of the project to see the new results and comment on them!
+Good Luck !
+Preprocessing
+All missing values have been re-encoded in a consistent way as NaNs.
+
+You successfully converted missing and unknown values to NaN and successfully checked the number of NaN before and after the converting, Well Done !
+Columns with a large amount of missing values have been removed from the analysis. Patterns in missing values have been identified between other columns.
+
+You successfully set the threshold percentage for columns =19 % and successfully dropped the 6 outlier columns, Well Done !
+Mixed-type features have been explored, resulting in re-engineered features.
+
+You successfully re-engineered PRAEGENDE_JUGENDJAHRE and CAMEO_INTL_2015 features into two new features each, Well Done !
+Categorical features have been explored and handled based on if they are binary or multi-level.
+
+You successfully explored the categorical features and re-encoded OST_WEST_KZ feature numerically, Well Done !
+The data has been split into two parts based on how much data is missing from each row. The subsets have been compared to see if they are qualitatively different from one another.
+
+You set the threshold value for rows splitting = 3 and the right value should be between 9 and 32 as the attached graph explains : the area between 9 and 32 is a gap area between the 2 areas at the borders !
+download.png
+
+Dataset includes all original features with appropriate data types and re-engineered features. Features that are not formatted for further analysis have been excluded.
+
+You decided to drop the original PRAEGENDE_JUGENDJAHRE and CAMEO_INTL_2015 features and kept only the modified features, Well Done !
+A function applying pre-processing operations has been created, so that the same steps can be applied to the general and customer demographics alike.
+
+You made good function except you set the threshold value for rows splitting here =0 as you keep only the rows that have zero NaN values and it's a wrong value as the right value should be between 9 and 32 and should equal the value you used above in rows splitting !
+Feature Transformation
+Feature scaling has been properly applied to the demographics data. Imputation has been performed to remove remaining missing values.
+
+You successfully performed imputation and applied feature scaling on the dataset, Well Done !
+Weights on at least three principal components are used to make inferences on correlations between original features of the data. General meanings are ascribed to principal components where applicable.
+
+You successfully got the required weights here, but you should print the name of the feature instead of the index of it !
+and you should re-run the cells here to see the new results after you fix the error in the pre-processing steps to see the new results if the weights changed or not ?
+Principal component analysis has been applied to the data to create transformed features. A variability analysis has been performed to justify a decision on the number of features to retain.
+
+You successfully made good steps here and decided to keep 80 principal components in the dataset, Well Done !
+But you should re-run the cells here again after you fix the error in the pre-processing steps to decide the number of principal components will you keep in the dataset if it will change or not ?
+Clustering
+Multiple cluster counts have been tested on the general demographics data, and the average point-centroid distances have been reported. A decision on the number of clusters to use is made and justified.
+
+You successfully made good steps here and decided to keep 10 cluster to cluster the data in them, Well Done !
+But you should re-run the cells here again after you fix the error in the pre-processing steps to decide the number of clusters will you cluster the dataset samples into them if they will change or not ?
+A comparison is made between the general population and customers to identify segments of the population that are central to the sales company's base as well as those that are not.
+
+You made good comparison here but you should re-run the cells of the comparison after you make the above change in the pre=processing steps and in the cleaning function to see the new results if the results changed or not ?
+Cleaning, feature transformation, dimensionality reduction, and clustering models are applied properly to the customer demographics data.
+
+You successfully used the created objects above for the general dataset here for the customers dataset, Well Done !
